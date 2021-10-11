@@ -40,7 +40,7 @@ namespace SeleniumUiTests
             _browserDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(20));
 
             _browserDriver.findElement(By.name("Fullname")).Clear();
-            _browserDriverfindElement(By.name("Fullname")).SendKeys(fullname);
+            _browserDriver.findElement(By.name("Fullname")).SendKeys(fullname);
 
             _browserDriver.FindElementById("Department").Clear();
             _browserDriver.FindElementById("Department").SendKeys(department);
